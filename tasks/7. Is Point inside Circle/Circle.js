@@ -12,6 +12,12 @@ export default function(center, radius) {
     },
     includes(Point) {
       // TODO: write your code here
+
+      // distance between two points
+      let distance = Math.sqrt((Point.x - center.x)**2 + (Point.y - center.y)**2);
+
+      // true if distance between two points is less or equal to radius
+      return distance <= radius;
     }
   }
 }
